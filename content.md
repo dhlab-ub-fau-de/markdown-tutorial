@@ -3,7 +3,7 @@
 # Texte aufbereiten und publizieren mit Markdown und Pandoc 
 
 
-===
+---
 
 
 ## Text erstellen
@@ -19,7 +19,7 @@ Moderne Textprozessoren wie MS Word, Google Docs, OO Writer...
 - *verbergen das zugrundeliegende Textmodell*
 
 
-===
+---
 
 
 ## Text auszeichnen
@@ -34,7 +34,7 @@ logische Struktur
 Semantische Auszeichnung = logische Struktur
 
 
-===
+---
 
 
 ## Markdown
@@ -42,27 +42,23 @@ Semantische Auszeichnung = logische Struktur
 Markdown ist eine Konvention.<br>
 (Quasi-Standard; kein Programm!)
 
-Markdown definiert Regeln, wie logische Strukturelemente eines
-Textes in "reinen" Textdateien dargestellt werden.
+Markdown definiert Regeln, wie logische Strukturelemente
+in "reinen" Textdateien dargestellt werden.
 
 
-===
+---
 
 
 ## Exkurs: Was ist eine Textdatei?
 
-- Textdateien enthalten _nur Schriftzeichen_ (alphanum. Zeichen, Zeilenumbrüche, Sonderzeichen)
-- Der Text ist mit einem bestimmten _Zeichensatz_ codiert (ASCII, Latin1, **UTF-8**)
-- _Keine Formatierung_
+- Textdateien enthalten _nur Schriftzeichen_, keine Formatierung <br>(alphanum. Zeichen, Zeilenumbrüche, Sonderzeichen)
+- Kodierung / _Zeichensatz_: ASCII, Latin1, **UTF-8**
 - Die Endung ist häufig _`.txt`_
-- Viele Formate sind eigentlich Textdateien mit bestimmter Textstruktur
-  - XML, HTML, Shell-Skript
-  - Markdown
-- Textdateien werden mit Texteditoren bearbeitet
-  - Notepad++, Atom, ...
+- Viele Formate sind eigentlich Textdateien: XML, HTML, Shell-Skript, ...
+- Texteditoren: Notepad++, Atom, ...
 
 
-===
+---
 
 
 ## Warum Markdown? Warum Textdateien
@@ -70,14 +66,12 @@ Textes in "reinen" Textdateien dargestellt werden.
 
 - Textmodell direkt sichtbar
 - Reduzierung auf das Nötigste
-- 
-
-- Werkzeug-unabhängig
+- Werkzeug-unabhängig _und_ große Werkzeugauswahl
 - leicht weiter- und wiederverwendbar
 - zukunftssicher
 
 
-===
+---
 
 
 ## Pandoc
@@ -88,7 +82,7 @@ Es wandelt Markdown in eine Reihe anderer Formate um
 - HTML, TEI, Latex, PDF, Word, ...
 
 
-===
+---
 
 
 ## Markdown, Pandoc und Git
