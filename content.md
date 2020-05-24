@@ -6,6 +6,19 @@
 ---
 
 
+## Tutorials
+
+Tutorials, an denen sich dieses Tutorial orientiert:
+
+- [Getting Started with Markdown](https://programminghistorian.org/en/lessons/getting-started-with-markdown)
+- [Sustainable Authorship in Plain Text using Pandoc and Markdown](https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)
+
+...zum Selberausprobieren in einer ruhigen Minute...
+
+
+---
+
+
 ## Text erstellen
 
 Moderne Textprozessoren wie MS Word, Google Docs, OO Writer... 
@@ -33,7 +46,7 @@ logische Struktur
 
 - - -
 
-Semantische Auszeichnung = logische Struktur
+Semantische Auszeichnung ~= logische Struktur
 
 
 ---
@@ -44,8 +57,10 @@ Semantische Auszeichnung = logische Struktur
 Markdown ist eine Konvention.<br>
 (Quasi-Standard; kein Programm!)
 
-Markdown definiert Regeln, wie logische Strukturelemente
-in "reinen" Textdateien dargestellt werden.
+Markdown definiert Regeln zur logischen Strukturierung von
+"reinen" Textdateien.
+
+Die Strukturen sind für Mensch und Maschine verständlich.
 
 
 ---
@@ -53,17 +68,30 @@ in "reinen" Textdateien dargestellt werden.
 
 ## Exkurs: Was ist eine Textdatei?
 
-- Textdateien enthalten _nur Schriftzeichen_, keine Formatierung <br>(alphanum. Zeichen, Zeilenumbrüche, Sonderzeichen)
+- Textdateien enthalten _nur Schriftzeichen_ <br>(alphanum. Zeichen, Zeilenumbrüche, Sonderzeichen)
 - Kodierung / _Zeichensatz_: ASCII, Latin1, **UTF-8**
 - Die Endung ist häufig _`.txt`_
 - Viele Formate sind eigentlich Textdateien: XML, HTML, Shell-Skript, ...
 - Texteditoren: Notepad++, Atom, ...
 
+- **Keine Formatierungsmöglichkeiten!?**
 
 ---
 
 
-## Warum Markdown? Warum Textdateien
+## Formatierung in Textdateien; :)
+
+![Formattierung im RFC 1195](rfc1195.png) <!-- .element style="width: 50%; display: inline;" -->
+![Vikus ASCII-Art](vikus_ascii_art.png) <!-- .element style="width: 30%; display: inline;" -->
+
+1. https://tools.ietf.org/html/rfc1195
+2. https://github.com/cpietsch/vikus-viewer/blob/master/js/viz.js
+
+
+---
+
+
+## Warum Markdown? Warum Textdateien?
 
 - Textmodell direkt sichtbar
 - Reduzierung auf das Nötigste
@@ -81,6 +109,10 @@ TEI: wissenschaftliche Aufbereitung von Texten
 
 Latex: Professioneller Satz & Layout
 
+BBCode, ...
+
+...
+
 
 ---
 
@@ -90,10 +122,12 @@ Latex: Professioneller Satz & Layout
 Markdown ist nicht standardisiert.<br>
 Es gibt verschiedenste Varianten/Flavors.
 
-- Das Originale Markdown
+- Das ursprüngliche Markdown
 - CommonMark
 - [GitHub flavored Markdown](https://github.github.com/gfm/)
 - ...
+
+Gemeinsame Basis, viele "Extras"
 
 
 ---
@@ -118,7 +152,8 @@ HTML, TEI, Latex, PDF, Word, ...
 
 Pandoc ist Open Source.
 
-Pandoc wird über die Kommandozeile bedient.
+Pandoc wird über die Kommandozeile bedient:<br>
+`pandoc -o Ausgabedatei.Format markdown.md`
 
 
 ---
@@ -127,19 +162,12 @@ Pandoc wird über die Kommandozeile bedient.
 ## Pandoc-Beispiel 
 
 Diese Folien als...
-1. [HTML](content.html): `pandoc -o content.html content.md`
+
+1. [HTML](content.html): `pandoc -s -o content.html content.md`
 2. [PDF](content.pdf): `pandoc --toc -o content.pdf content.md`
 3. [Word](content.docx): `pandoc -o content.docx content.md` 
 
 Und im Original: [Markdown](content.md)
-
-
----
-
-
-## Pandoc selbst ausprobieren
-
-Die Webseite von Pandoc bietet eine [Demo](https://pandoc.org/try/)
 
 
 ---
@@ -162,13 +190,21 @@ Pandoc beachtet Metadaten für das Zieldokument.
 ---
 
 
+## Pandoc selbst ausprobieren
+
+Die Webseite von Pandoc bietet eine [Demo](https://pandoc.org/try/)
+
+
+---
+
+
 ## Markdown, Pandoc und Git
 
 Markdown: Text verfassen
 
-Pandoc: Publikation erstellen
-
 Git: Versionieren und kollaborieren
+
+Pandoc: Publikation erstellen
 
 
 ---
@@ -176,12 +212,8 @@ Git: Versionieren und kollaborieren
 
 ## Beispiel: Programming Historian
 
-Tutorials, an denen sich dieses Tutorial orientiert:
 
-- [Getting Started with Markdown](https://programminghistorian.org/en/lessons/getting-started-with-markdown)
-- [Sustainable Authorship in Plain Text using Pandoc and Markdown](https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)
-
-Lektionen des Programming Historian werden in Markdown verfasst, über
-[GitHub verwaltet](https://github.com/programminghistorian/jekyll/tree/gh-pages/en/lessons) und mit Pandoc publiziert.
+Lektionen des Programming Historian werden in Markdown verfasst und über
+[GitHub verwaltet](https://github.com/programminghistorian/jekyll/tree/gh-pages/en/lessons).
 
 
